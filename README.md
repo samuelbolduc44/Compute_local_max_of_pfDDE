@@ -1,6 +1,6 @@
 # Bifurcation Diagram of a Periodically Forced Delay Differential Equation
 
-This repository contains a Julia script for generating bifurcation diagrams of the periodically forced delay differential equation. 
+This repository contains a Julia script for generating bifurcation diagrams of a scalar (potentially non-autonomous) delay differential equation. 
 
 The script solves the delay differential equation for a sequence of delay values and records the local maxima of the long-time solution to construct a classical bifurcation diagram.
 
@@ -8,13 +8,12 @@ The script solves the delay differential equation for a sequence of delay values
 
 The equation solved is a periodically forced version of the Mori-Zwangzig ENSO model 
 
-\[
-\dot{x}(t)
-=
+
+${x}'(t)=
 x(t)-x(t)^3
 -\alpha x(t-\tau)\left(1-\gamma x(t-\tau)^2\right)
-+c\cos(2\pi t),
-\]
++c\cos(2\pi t)$,
+
 
 where
 
